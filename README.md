@@ -111,7 +111,6 @@ computingPRJ2/
 ### Prerequisites
 - Python 3.10+
 - Node.js 18+
-- A Gmail account with an **App Password** enabled
 
 ### 1. Clone the repository
 ```bash
