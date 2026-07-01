@@ -115,8 +115,8 @@ computingPRJ2/
 
 ### 1. Clone the repository
 ```bash
-git clone <repo-url>
-cd computingPRJ2
+git clone https://github.com/rijaannn5994/Misched-2
+cd Misched-2
 ```
 
 ### 2. Set up the Backend
@@ -125,17 +125,6 @@ cd computingPRJ2
 cd backend
 pip install -r requirement.txt
 ```
-
-Create a `.env` file in the `backend/` folder:
-```env
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your-email@gmail.com
-SMTP_PASSWORD=your-app-password
-EMAIL_FROM_NAME=MiSched
-```
-
-> **Gmail App Password**: Go to Google Account → Security → 2-Step Verification → App Passwords. Generate one for "Mail".
 
 Start the backend:
 ```bash
@@ -167,9 +156,9 @@ After seeding, use these credentials to log in:
 
 | Role | Email | Password |
 |---|---|---|
-| Admin | admin@uni.ac.uk | admin123 |
-| Staff | staff@uni.ac.uk | staff123 |
-| Student | student@uni.ac.uk | student123 |
+| Admin | admin@misched.com | admin123 |
+| Staff | staff@misched.com | staff123 |
+| Student | student@misched.com | student123 |
 
 *(Credentials depend on what was entered in seed.py)*
 
@@ -225,7 +214,7 @@ The theme is stored in `localStorage` and applied via a `data-theme` attribute o
 
 | Variable | Description |
 |---|---|
-| `SMTP_HOST` | SMTP server (smtp.gmail.com) |
+| `SMTP_HOST` | SMTP server |
 | `SMTP_PORT` | SMTP port (587) |
 | `SMTP_USER` | Gmail address |
 | `SMTP_PASSWORD` | Gmail App Password |
