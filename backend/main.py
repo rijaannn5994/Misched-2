@@ -747,7 +747,7 @@ def student_checkin(req: StudentCheckinRequest, db: Session = Depends(get_db), s
     if not enrollment:
         raise HTTPException(status_code=403, detail="You are not enrolled in this module")
 
-    now = datetime.utcnow()
+    now = datetime.now()
     if now < lecture.start_time:
         raise HTTPException(status_code=400, detail="Lecture has not started yet")
     if now > lecture.end_time:
@@ -907,7 +907,7 @@ def mark_attendance(req: AttendanceMarkRequest, db: Session = Depends(get_db), s
     if lecture.staff_id != staff.id:
         raise HTTPException(status_code=403, detail="Not your lecture")
 
-    now = datetime.utcnow()
+    now = datetime.now()
     if now < lecture.start_time or now > lecture.end_time:
         raise HTTPException(status_code=400, detail="Lecture not currently active")
 

@@ -294,12 +294,10 @@ body {
   color: var(--text-muted);
 }
 
-/* Custom Blue Calendar Icon Override */
 input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   color: transparent;
   background: transparent;
-  /* Hex %23007bff matches your --primary-color */
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23007bff" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
   background-repeat: no-repeat;
   background-position: center;
@@ -330,7 +328,6 @@ select.input option {
   letter-spacing: 0.05em;
 }
 
-/* ---------- Badges ---------- */
 .badge {
   display: inline-flex;
   align-items: center;
@@ -371,7 +368,6 @@ select.input option {
   border: 1px solid rgba(139, 92, 246, 0.25);
 }
 
-/* ---------- Alerts / Toasts ---------- */
 .alert {
   padding: 0.85rem 1.25rem;
   border-radius: var(--radius-md);
@@ -408,7 +404,6 @@ select.input option {
   color: #60a5fa;
 }
 
-/* ---------- Page Layout (backward compat) ---------- */
 .page-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -439,7 +434,6 @@ select.input option {
   color: var(--text-primary);
 }
 
-/* ---------- Stat Cards ---------- */
 .stat-card {
   text-align: center;
   padding: 1.25rem;
@@ -460,7 +454,6 @@ select.input option {
   font-weight: 500;
 }
 
-/* ---------- Tables ---------- */
 .table-container {
   overflow-x: auto;
   border-radius: var(--radius-lg);
@@ -499,7 +492,6 @@ select.input option {
   border-bottom: none;
 }
 
-/* ---------- Tabs ---------- */
 .tabs {
   display: flex;
   gap: 0.25rem;
@@ -535,7 +527,6 @@ select.input option {
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
-/* ---------- Grid Utilities (backward compat) ---------- */
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -566,7 +557,6 @@ select.input option {
   gap: 1rem;
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
   .grid-2, .grid-3 {
     grid-template-columns: 1fr;
@@ -591,7 +581,6 @@ select.input option {
   .tab { flex: 0 0 auto; white-space: nowrap; min-width: max-content; }
 }
 
-/* ---------- Toast notifications ---------- */
 .toast-container {
   position: fixed;
   top: calc(4rem + env(safe-area-inset-top));
@@ -603,7 +592,6 @@ select.input option {
   max-width: calc(100vw - 3rem);
 }
 
-/* ---------- Safe-area helpers ---------- */
 .safe-top    { padding-top:    env(safe-area-inset-top); }
 .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
 
@@ -618,7 +606,6 @@ select.input option {
 /* Prevent content hiding behind mobile nav */
 .mobile-page-pad { padding-bottom: calc(4.5rem + env(safe-area-inset-bottom)); }
 
-/* ---------- Scrollbar ---------- */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -637,9 +624,7 @@ select.input option {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* ============================================================
-   LIGHT THEME OVERRIDES  (data-theme="light" on <html>)
-   ============================================================ */
+/* LIGHT THEME OVERRIDES  (data-theme="light" on <html>) */
 
 [data-theme="light"] {
   --bg-primary:   #f0f4ff;

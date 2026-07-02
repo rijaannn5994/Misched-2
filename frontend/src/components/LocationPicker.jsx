@@ -12,7 +12,7 @@ L.Icon.Default.mergeOptions({
 
 const DEFAULT = [54.5973, -5.9301]; // Ulster University Belfast
 
-// ── Plain-Leaflet map component (no react-leaflet) ──────────────────────────
+// ── Plain-Leaflet map component (no react-leaflet)
 const LeafletMap = ({ lat, lng, onPick }) => {
   const containerRef = useRef(null);
   const mapRef       = useRef(null);
@@ -73,7 +73,7 @@ const LeafletMap = ({ lat, lng, onPick }) => {
   );
 };
 
-// ── Main component ────────────────────────────────────────────────────────────
+//  Main component
 const LocationPicker = ({ lat, lng, name, onChange }) => {
   const [mode, setMode]           = useState('search');
   const [query, setQuery]         = useState('');

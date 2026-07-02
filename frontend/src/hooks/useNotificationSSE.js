@@ -43,5 +43,5 @@ export function useNotificationSSE(onNew) {
       clearTimeout(timer);
       if (es) es.close();
     };
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 }

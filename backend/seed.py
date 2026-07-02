@@ -31,9 +31,7 @@ def seed():
             db.query(User).delete()
             db.commit()
 
-        # ──────────────────────────────────────
         # USERS
-        # ──────────────────────────────────────
         admin = User(name="Admin User", email="admin@misched.com", password=get_password_hash("admin123"), role=UserRole.ADMIN)
         
         staff_members = [
@@ -64,9 +62,7 @@ def seed():
         print(f"        Staff:    s.wilson@ulster.ac.uk / staff123")
         print(f"        Student:  student@misched.com / student123")
 
-        # ──────────────────────────────────────
         # MODULES
-        # ──────────────────────────────────────
         modules = [
             Module(module_name="Software Engineering", module_code="COM327"),
             Module(module_name="Database Systems", module_code="COM519"),
@@ -80,9 +76,7 @@ def seed():
             db.refresh(m)
         print(f"  [OK]  Created {len(modules)} modules")
 
-        # ──────────────────────────────────────
         # ENROLLMENTS
-        # ──────────────────────────────────────
         enrollments = []
         # Enroll each student in 3-4 random modules
         for student in students:
@@ -93,9 +87,7 @@ def seed():
         db.commit()
         print(f"  [OK]  Created {len(enrollments)} enrollments")
 
-        # ──────────────────────────────────────
         # LECTURES (spread across this week and next)
-        # ──────────────────────────────────────
         now = datetime.utcnow()
         today = now.replace(hour=0, minute=0, second=0, microsecond=0)
         rooms = ["101", "202", "305", "Lab A", "Lab B", "Seminar Room 1"]
@@ -103,9 +95,9 @@ def seed():
         lectures = []
         # Assign each staff member specific modules
         staff_module_map = {
-            staff_members[0].id: [modules[0], modules[1]],   # Dr. Wilson → Software Eng, Database
-            staff_members[1].id: [modules[2], modules[3]],   # Dr. Chen → Web Tech, AI
-            staff_members[2].id: [modules[4], modules[0]],   # Prof. Davies → Networks, Software Eng
+            staff_members[0].id: [modules[0], modules[1]],   
+            staff_members[1].id: [modules[2], modules[3]],   
+            staff_members[2].id: [modules[4], modules[0]],   
         }
 
         for staff_id, staff_modules in staff_module_map.items():
@@ -136,9 +128,7 @@ def seed():
             db.refresh(l)
         print(f"  [OK]  Created {len(lectures)} lectures")
 
-        # ──────────────────────────────────────
         # ATTENDANCE RECORDS (for past lectures)
-        # ──────────────────────────────────────
         attendance_records = []
         past_lectures = [l for l in lectures if l.start_time < now]
         

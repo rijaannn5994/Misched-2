@@ -241,7 +241,7 @@ const Staff = () => {
         ))}
       </div>
 
-      {/* ═══════ TODAY'S LECTURES ═══════ */}
+      {/*  TODAY'S LECTURES  */}
       {activeTab === 'today' && (
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-4">
           {todayLectures.length > 0 ? todayLectures.map(lec => (
@@ -276,7 +276,7 @@ const Staff = () => {
         </motion.div>
       )}
 
-      {/* ═══════ MARK ATTENDANCE ═══════ */}
+      {/*  MARK ATTENDANCE  */}
       {activeTab === 'attendance' && (
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-4">
           {/* Lecture selector */}
@@ -346,7 +346,7 @@ const Staff = () => {
         </motion.div>
       )}
 
-      {/* ═══════ FULL SCHEDULE ═══════ */}
+      {/*  FULL SCHEDULE  */}
       {activeTab === 'schedule' && (
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-3">
           {lectures.length > 0 ? lectures.map(lec => {
@@ -379,7 +379,7 @@ const Staff = () => {
         </motion.div>
       )}
 
-      {/* ═══════ NOTIFICATIONS ═══════ */}
+      {/*  NOTIFICATIONS  */}
       {activeTab === 'notifications' && (
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-6">
           {/* Send Alert to Students */}

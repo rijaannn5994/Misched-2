@@ -32,7 +32,7 @@ const Home = () => {
         : "linear-gradient(135deg, #0f0c29 0%, #1a1040 40%, #0d1b2a 100%)",
       minHeight: "100vh",
     }}>
-      {/* ========== Hero Section ========== */}
+      {/*  Hero Section  */}
       <section
         style={{
           minHeight: "calc(100vh - 3.75rem)",
@@ -228,7 +228,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ========== Features Section ========== */}
+      {/*  Features Section  */}
       <section
         id="features"
         style={{ padding: "6rem 2rem", position: "relative" }}
@@ -485,7 +485,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ========== How It Works ========== */}
+      {/*  How It Works  */}
       <section
         style={{ padding: "6rem 2rem", borderTop: `1px solid ${t.borderF}` }}
       >
@@ -614,7 +614,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ========== Footer ========== */}
+      {/* Footer */}
       <footer
         style={{
           padding: "2rem",

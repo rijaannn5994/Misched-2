@@ -482,7 +482,7 @@ const Student = () => {
           </motion.div>
         )}
 
-        {/* ═══════ NOTIFICATIONS VIEW ═══════ */}
+        {/*  NOTIFICATIONS VIEW  */}
         {activeView === 'notifications' && (
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="glass-card-static">
@@ -532,7 +532,7 @@ const Student = () => {
           </motion.div>
         )}
 
-        {/* ═══════ PROFILE VIEW ═══════ */}
+        {/*  PROFILE VIEW  */}
         {activeView === 'profile' && (
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="glass-card-static max-w-md">
@@ -578,7 +578,7 @@ const Student = () => {
         )}
       </div>
 
-      {/* ═══════ BOTTOM NAVIGATION BAR (Mobile) ═══════ */}
+      {/*  BOTTOM NAVIGATION BAR (Mobile)  */}
       <nav className="misched-bottom-nav mobile-bottom-nav md:hidden bg-[rgba(10,10,20,0.95)] backdrop-blur-xl border-t border-white/[0.06]">
         <div className="flex items-center justify-around h-16 px-2">
           {navItems.map(item => (
